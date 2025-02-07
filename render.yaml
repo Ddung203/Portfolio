@@ -1,0 +1,9 @@
+services:
+  - name: ddung203-portfolio
+    type: static_site
+    repo: https://github.com/Ddung203/Portfolio
+    branch: main
+    buildCommand: npm install && npm run build
+    staticPublishPath: build
+    autoDeploy: true
+    pullRequestPreviewsEnabled: true
